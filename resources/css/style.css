@@ -1,0 +1,101 @@
+:root {
+  --primary-color: hsl(322, 100%, 66%);
+  --pale-blue: hsl(192, 100%, 9%);
+  --dark-cyan: hsl(207, 100%, 98%); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+html {
+  font-size: 10px;
+  box-sizing: border-box; }
+
+body {
+  background-color: var(--background); }
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.container {
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 0 10rem; }
+
+.two-column-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--text-primary); }
+
+.attribution a {
+  color: var(--text-secondary); }
+
+body {
+  font-size: 1.4rem;
+  font-family: 'Open Sans', sans-serif; }
+
+.btn:focus {
+  outline: none; }
+
+#switch {
+  display: none; }
+  #switch:checked + .switch-toggle::after {
+    transform: translatex(0); }
+
+.switch-container label:first-of-type {
+  font-weight: 700;
+  color: var(--text-secondary);
+  margin-right: 2rem; }
+
+.switch-toggle {
+  position: relative;
+  display: block;
+  height: 2.5rem;
+  padding: .3rem;
+  width: 5rem;
+  background-color: var(--toggle-color);
+  background-image: var(--toggle-color);
+  border-radius: 2rem;
+  transition: all .5s;
+  cursor: pointer; }
+  .switch-toggle:after {
+    content: "";
+    display: inline-block;
+    height: 1.9rem;
+    width: 1.9rem;
+    background-color: var(--background);
+    border-radius: 50%;
+    transition: all .3s;
+    transform: translatex(130%); }
+  .switch-toggle:hover {
+    background-image: linear-gradient(to right, #378fe6, #3eda82); }
+
+section:nth-child(odd) {
+  background-color: var(--dark-cyan); }
+
+section .section__content--img img {
+  width: 100%; }
+
+section .section__content--text h2 {
+  align-self: flex-start; }
+
+footer {
+  background-color: var(--pale-blue); }

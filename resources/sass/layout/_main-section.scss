@@ -1,0 +1,21 @@
+section{
+
+    padding: ;
+    /////////////////////setting the background of the first and second sections/////////////////////////////////////////////////////////////
+    &:nth-child(odd){
+        background-color: var(--dark-cyan);
+    }
+    .section__content{
+        
+        &--img{
+            img{
+                width: 100%;
+            }
+        }
+        &--text{
+            h2{
+                align-self: flex-start;
+            }
+        }
+    }
+}
