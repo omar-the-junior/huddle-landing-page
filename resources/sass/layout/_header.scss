@@ -1,0 +1,36 @@
+header{
+    margin: 15rem 0;
+    text-align: center;
+}
+
+.header{
+
+    &__top{
+        h1{
+            font-weight: 700;
+            font-size: 4.5rem;
+        }
+        p{
+            width: 56rem;
+            margin: 2rem 0 5rem 0;
+        }
+    }
+
+    &__main{
+        img:first-of-type{
+            margin-top: 10rem;
+        }
+
+        .container{
+            width: 100rem;
+
+            .flex-column:first-of-type{
+                margin-right: auto;
+            }
+
+            img{
+                align-self: flex-start;
+            }
+        }
+    }
+}

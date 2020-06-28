@@ -32,9 +32,9 @@ body {
   align-items: center; }
 
 .container {
-  max-width: 140rem;
-  margin: 0 auto;
-  padding: 0 10rem; }
+  width: 130rem;
+  max-width: 100%;
+  padding: 0 5rem; }
 
 .two-column-grid-container {
   display: grid;
@@ -49,11 +49,52 @@ body {
   color: var(--text-secondary); }
 
 body {
-  font-size: 1.4rem;
-  font-family: 'Open Sans', sans-serif; }
+  font-size: 1.9rem;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--pale-blue); }
 
-.btn:focus {
-  outline: none; }
+h1,
+h2 {
+  font-family: 'Poppins', sans-serif; }
+
+.text-large {
+  font-weight: 700;
+  font-size: 7.5rem; }
+
+.btn {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  padding: 1rem 3rem;
+  border: none;
+  background-color: var(--primary-color);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  transition: all 0.3s; }
+  .btn-rounded {
+    border-radius: 5rem;
+    box-shadow: -3px 6px 20px #9a9090; }
+    .btn-rounded:hover {
+      transform: scale(1.1); }
+  .btn-outline-only {
+    color: var(--primary-color);
+    background-color: transparent;
+    border: solid 1px var(--primary-color);
+    box-shadow: none; }
+    .btn-outline-only:hover {
+      color: #fff;
+      background-color: var(--primary-color); }
+  .btn-large {
+    padding: 2rem 7rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+    transition: all 0.6s; }
+  .btn:focus {
+    outline: none; }
+  .btn:active {
+    transform: scale(0.95); }
 
 #switch {
   display: none; }
@@ -88,6 +129,31 @@ body {
   .switch-toggle:hover {
     background-image: linear-gradient(to right, #378fe6, #3eda82); }
 
+footer {
+  background-color: var(--pale-blue); }
+
+header {
+  margin: 15rem 0;
+  text-align: center; }
+
+.header__top h1 {
+  font-weight: 700;
+  font-size: 4.5rem; }
+
+.header__top p {
+  width: 56rem;
+  margin: 2rem 0 5rem 0; }
+
+.header__main img:first-of-type {
+  margin-top: 10rem; }
+
+.header__main .container {
+  width: 100rem; }
+  .header__main .container .flex-column:first-of-type {
+    margin-right: auto; }
+  .header__main .container img {
+    align-self: flex-start; }
+
 section:nth-child(odd) {
   background-color: var(--dark-cyan); }
 
@@ -97,5 +163,5 @@ section .section__content--img img {
 section .section__content--text h2 {
   align-self: flex-start; }
 
-footer {
-  background-color: var(--pale-blue); }
+.navbar {
+  margin: 5rem auto 0 auto; }

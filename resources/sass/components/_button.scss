@@ -3,9 +3,49 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 .btn {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  padding: 1rem 3rem;
+  border: none;
+  background-color: var(--primary-color);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  transition: all 0.3s;
 
+  &-rounded {
+    border-radius: 5rem;
+    box-shadow: -3px 6px 20px #9a9090;
+      &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &-outline-only {
+    color: var(--primary-color);
+    background-color: transparent;
+    border: solid 1px var(--primary-color);
+    box-shadow: none;
+
+    &:hover {
+      color: #fff;
+      background-color: var(--primary-color);
+    }
+  }
+
+  &-large {
+    padding: 2rem 7rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+    transition: all 0.6s
+  }
   &:focus {
     outline: none;
   }
 
+  &:active {
+    transform: scale(0.95);
+  }
 }

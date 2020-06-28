@@ -2,6 +2,18 @@
 ///////////////typography styles//////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 body {
-  font-size: 1.4rem;
+  font-size: 1.9rem;
   font-family: 'Open Sans', sans-serif;
+  color: var(--pale-blue);
+}
+
+h1,
+h2{
+  font-family: 'Poppins', sans-serif;
+ 
+}
+
+.text-large{
+  font-weight: 700;
+  font-size: 7.5rem;
 }
