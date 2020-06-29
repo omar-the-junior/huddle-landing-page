@@ -20,9 +20,9 @@
   </nav>
 
 
-  <header class="flex-column">
+  <header class=" curved-bottom flex-column">
 
-    <div class="container">
+    <div class="container-small">
 
       <div class="header__top flex-column">
         <h1>Build The Community Your Fans Will Love</h1>
@@ -32,21 +32,22 @@
       </div>
 
       <div class="header__main flex-column">
-        <img src="./resources/images/screen-mockups.svg" alt="">
+        <img class="header__main--img" src="./resources/images/screen-mockups.svg" alt="Screen mockups">
 
         <div class="container flex-row">
           <div class="flex-column">
-            <img src="./resources/images/icon-communities.svg" alt="">
+            <img src="./resources/images/icon-communities.svg" alt="Communities icon">
             <span class="text-large">1.4k+</span>
             <span>Communities Formed</span>
           </div>
           <div class="flex-column">
-            <img src="./resources/images/icon-messages.svg" alt="">
+            <img src="./resources/images/icon-messages.svg" alt=" Messages icon">
             <span class="text-large">2.7m+</span>
             <span>Messages Sent</span>
           </div>
         </div>
       </div>
+
     </div>
   </header>
 
@@ -66,7 +67,8 @@
 
       </div>
     </section>
-    <section class="flex-column">
+
+    <section class="flex-column curved">
       <div class="container section__content two-column-grid-container">
 
         <div class="section__content--img">
@@ -82,6 +84,7 @@
 
       </div>
     </section>
+
     <section class="flex-column">
       <div class="container section__content two-column-grid-container">
 
@@ -97,45 +100,54 @@
 
       </div>
     </section>
-    <section class="flex-column">
+
+    <section class="flex-column curved">
       <div class="container section__content flex-column">
         <h2>Ready To Build Your Community?</h2>
-        <button class="btn btn-rounded">Get Started For Free</button>
+        <button class="btn btn-rounded btn-large">Get Started For Free</button>
       </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="flex-column">
     <div class="container two-column-grid-container">
+
       <div>
-
-        <img src="./resources/images/logo-white.svg" alt="Logo image (conversations)">
+        <img class="footer__logo" src="./resources/images/logo-white.svg" alt="Logo image (conversations)">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia
-          vestibulum a, ultrices quis sem.</p>]
+          vestibulum a, ultrices quis sem.</p>
 
-        <span><img src="./resources/images/icon-phone.svg" alt="Phone icon"> Phone: +1-543-123-4567</span>
-        <span><img src="./resources/images/icon-email.svg" alt="Phone icon"> example@huddle.com</span>
+        <ul class="footer__contact-info">
+          <li><img src="./resources/images/icon-phone.svg" alt="Phone icon"> Phone: +1-543-123-4567</li>
+          <li><img src="./resources/images/icon-email.svg" alt="Phone icon"> example@huddle.com</li>
+        </ul>
 
-        <ul class=" social-media-icons-container flex-row">
+        <ul class="footer__social-media-icons flex-row">
           <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
           <li><a href="#"><i class="fab fa-instagram"></i></a></li>
           <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
         </ul>
       </div>
-      <div>
+
+      <div class="footer__news-letter">
         <h2>Newsletter</h2>
         <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never
           send you spam or pass on your email address</p>
-        <button class="btn">Subscribe</button>
+        <form action="#" class="flex-row">
+          <input type="text">
+          <button class="btn">Subscribe</button>
+        </form>
+
       </div>
+
     </div>
 
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="https://github.com/Omar-JR">Omar Masoud Omar</a>.
-    </p>
-
   </footer>
+
+  <p class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/Omar-JR">Omar Masoud Omar</a>.
+  </p>
 </body>
 
 </html>

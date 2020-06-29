@@ -3,11 +3,9 @@
 ///////////////////////////////////////////////////////////////
 
 :root {
-
   --primary-color: hsl(322, 100%, 66%);
   --pale-blue: hsl(192, 100%, 9%);
   --dark-cyan: hsl(207, 100%, 98%);
-
 }
 
 * {
@@ -24,7 +22,6 @@
 html {
   font-size: 10px;
   box-sizing: border-box;
-
 }
 
 body {
@@ -50,11 +47,91 @@ body {
   max-width: 100%;
   padding: 0 5rem;
 
+  &-small {
+    width: 115rem;
+    padding: 0 10rem;
+    max-width: 100%;
+
+    @media only screen and (max-width: 850px) {
+      width: 130rem;
+      padding: 5rem;
+    }
+  }
+
+
 }
 
-.two-column-grid-container{
+.curved {
+  
+  &,
+  &-bottom{
+    position: relative;
+    padding: 30rem 0;
+
+    .container, 
+    .container-small {
+      position: relative;
+      z-index: 2;
+    }
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("../images/bg-section-top-desktop-2.svg");
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: contain;
+      z-index: 0;
+    }
+
+    &::before{
+      background-position: top;
+      background-image: url("../images/bg-section-bottom-desktop-1.svg");
+    }
+  }
+
+  &:nth-child(4){
+
+    padding-bottom: 40rem;
+    &::after{
+      background-image: url("../images/bg-footer-top-desktop.svg");
+    }
+
+    &::before{
+      background-image: url("../images/bg-section-bottom-desktop-2.svg");
+    }
+  }
+
+  &-bottom{
+
+    padding:  0 0 20rem 0;
+    &::before{
+      display: none;
+    }
+
+    &::after{
+      background-image: url("../images/bg-section-top-desktop-1.svg");
+    }
+  }
+}
+
+.two-column-grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  column-gap: 15rem;
+
+  @media only screen and (max-width: 950px){
+    column-gap: 5rem;
+  }
+
+  @media only screen and (max-width: 850px){
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 
 .attribution {

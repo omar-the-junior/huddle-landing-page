@@ -1,5 +1,5 @@
 header{
-    margin: 15rem 0;
+    margin-top: 15rem;
     text-align: center;
 }
 
@@ -12,20 +12,27 @@ header{
         }
         p{
             width: 56rem;
-            margin: 2rem 0 5rem 0;
+            font-size: 1.9rem;
+            margin-top: 2rem;
+            max-width: 100%;
         }
     }
 
     &__main{
-        img:first-of-type{
-            margin-top: 10rem;
+        &--img{
+            margin: 10rem 0;
+            width: 100%;
         }
 
         .container{
             width: 100rem;
 
-            .flex-column:first-of-type{
-                margin-right: auto;
+            .flex-column{
+
+                &:first-of-type{
+                    margin-right: auto;
+                }
+
             }
 
             img{
