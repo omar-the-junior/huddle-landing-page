@@ -15,6 +15,9 @@
 html {
   font-size: 10px;
   box-sizing: border-box; }
+  @media only screen and (max-width: 450px) {
+    html {
+      font-size: 8px; } }
 
 body {
   background-color: var(--background); }
@@ -251,6 +254,9 @@ header {
 .header__top h1 {
   font-weight: 700;
   font-size: 4.5rem; }
+  @media only screen and (max-width: 500px) {
+    .header__top h1 {
+      font-size: 3.5rem; } }
 
 .header__top p {
   width: 56rem;
@@ -291,3 +297,6 @@ section .section__content--text h2 {
 
 .navbar {
   margin: 5rem auto 0 auto; }
+  @media only screen and (max-width: 600px) {
+    .navbar img {
+      width: 12rem; } }

@@ -22,6 +22,10 @@
 html {
   font-size: 10px;
   box-sizing: border-box;
+
+  @media only screen and (max-width: 450px){
+    font-size: 8px;
+  }
 }
 
 body {
